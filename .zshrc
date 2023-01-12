@@ -11,3 +11,4 @@ source $ZSH/oh-my-zsh.sh
 
 # Set colors for LS_COLORS.
 eval `dircolors ~/.dircolors`
+function search_urls() { rails routes -q "$1" }
