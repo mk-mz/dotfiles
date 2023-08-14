@@ -11,7 +11,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Set colors for LS_COLORS.
 eval `dircolors ~/.dircolors`
-function search_urls() { rails routes -q "$1" }
+function search_urls() { rails routes -g "$1" }
 
 function setup_bp_dotcom {
     bin/toggle-feature-flag enable billing_vnext_pages
