@@ -37,3 +37,11 @@ function full_setup_billing_platform {
     script/server
 }
 
+function start_docker {
+    sudo pkill dockerd && sudo pkill containerd
+    /usr/local/share/docker-init.sh
+}
+
+function remove_containers {
+    docker rm -f $(docker ps -aq)
+}
