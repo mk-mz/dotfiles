@@ -45,3 +45,7 @@ function start_docker {
 function remove_containers {
     docker rm -f $(docker ps -aq)
 }
+
+function cosmos_query {
+    script/cli --query
+}
