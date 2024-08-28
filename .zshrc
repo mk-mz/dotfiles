@@ -21,7 +21,6 @@ function setup_bp_dotcom {
 function setup_billing_platform {
     script/setup-codespaces-billing-platform
     cd ../billing-platform
-    az login --use-device-code
 }
 
 function bp_run_server {
@@ -32,8 +31,6 @@ function bp_run_server {
 function full_setup_billing_platform {
     script/setup-codespaces-billing-platform
     cd ../billing-platform
-    az login --use-device-code
-    script/set-remote
     script/server
 }
 
