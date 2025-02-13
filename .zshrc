@@ -13,26 +13,13 @@ source $ZSH/oh-my-zsh.sh
 eval `dircolors ~/.dircolors`
 function search_urls() { rails routes -g "$1" }
 
-function setup_bp_dotcom {
-    bin/toggle-feature-flag enable billing_vnext_pages
-    script/server --debug
-}
 
 function setup_billing_platform {
     script/setup-codespaces-billing-platform
     cd ../billing-platform
+    code /workspaces/billing-platform/.vscode/github-billing-platform.code-workspace
 }
 
-function bp_run_server {
-    script/set-remote
-    script/server
-}
-
-function full_setup_billing_platform {
-    script/setup-codespaces-billing-platform
-    cd ../billing-platform
-    script/server
-}
 
 function start_docker {
     sudo pkill dockerd && sudo pkill containerd
