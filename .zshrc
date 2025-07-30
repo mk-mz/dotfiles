@@ -34,6 +34,9 @@ function cosmos_query {
     script/cli --query
 }
 
+function npm_test_watch {
+    bin/npm run test:watch -w @github-ui/billing-app
+}
 
 function test_emu() { TEST_WITH_ALL_EMUS=1 bin/rails test "$1" }
 function test_all_features() { TEST_ALL_FEATURES=1 bin/rails test "$1" }
