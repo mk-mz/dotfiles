@@ -41,3 +41,7 @@ function npm_test_watch {
 function test_emu() { TEST_WITH_ALL_EMUS=1 bin/rails test "$1" }
 function test_all_features() { TEST_ALL_FEATURES=1 bin/rails test "$1" }
 function seed_console() { bin/seed console }
+
+function dc_down {
+    script/dc down
+}
