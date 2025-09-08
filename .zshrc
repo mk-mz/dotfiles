@@ -45,3 +45,7 @@ function seed_console() { bin/seed console }
 function dc_down {
     script/dc down
 }
+
+function sync_github {
+    bin/dev-sync-github-inc-billing-platform
+}
