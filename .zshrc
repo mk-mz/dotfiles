@@ -49,3 +49,7 @@ function dc_down {
 function sync_github {
     bin/dev-sync-github-inc-billing-platform
 }
+
+function gh_ui {
+    script/server --ui --debug
+}
