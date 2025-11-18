@@ -53,3 +53,7 @@ function sync_github {
 function gh_ui {
     script/server --ui --debug
 }
+
+function open_github_ui {
+    script/open-with-github-ui
+}
