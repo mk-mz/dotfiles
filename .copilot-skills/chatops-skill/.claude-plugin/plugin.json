@@ -1,0 +1,7 @@
+{
+  "name": "chatops",
+  "description": "Find and use GitHub ChatOps/Hubot commands and workflows including deploy commands, sparkles, and .ci commands.",
+  "author": {
+    "name": "GitHub"
+  }
+}

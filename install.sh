@@ -19,6 +19,24 @@ create_symlinks() {
 
 create_symlinks
 
+install_copilot_skills() {
+    script_dir=$(dirname "$(readlink -f "$0")")
+    skills_src="$script_dir/.copilot-skills"
+
+    if [ -d "$skills_src" ]; then
+        mkdir -p "$HOME/.copilot/skills"
+        for skill in "$skills_src"/*/; do
+            skill_name=$(basename "$skill")
+            echo "Installing Copilot skill: $skill_name"
+            rm -rf "$HOME/.copilot/skills/$skill_name"
+            cp -r "$skill" "$HOME/.copilot/skills/$skill_name"
+        done
+        echo "✅ Copilot skills installed to ~/.copilot/skills/"
+    fi
+}
+
+install_copilot_skills
+
 echo "Setting up the Spaceship theme."
 
 echo "Installing Powerline"

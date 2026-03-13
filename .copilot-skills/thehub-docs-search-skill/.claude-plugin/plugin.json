@@ -1,0 +1,7 @@
+{
+  "name": "thehub-docs-search",
+  "description": "Search and retrieve documentation from github/thehub for internal policies, guides, and deployment docs.",
+  "author": {
+    "name": "GitHub"
+  }
+}

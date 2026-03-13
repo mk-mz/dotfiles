@@ -1,0 +1,7 @@
+{
+  "name": "datadog-monitor-setup",
+  "description": "Set up and configure Datadog monitors with proper naming conventions, thresholds, and best practices.",
+  "author": {
+    "name": "GitHub"
+  }
+}

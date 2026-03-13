@@ -1,0 +1,7 @@
+{
+  "name": "jargon-translation",
+  "description": "Look up and define GitHub-internal terminology, acronyms, and jargon like PRU, dialtone, and more.",
+  "author": {
+    "name": "GitHub"
+  }
+}

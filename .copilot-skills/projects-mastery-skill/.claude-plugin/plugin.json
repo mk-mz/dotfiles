@@ -1,0 +1,7 @@
+{
+  "name": "projects-mastery",
+  "description": "Manage GitHub Projects (v2) with PM-level control using gh CLI, GraphQL, and REST APIs for workflows and automation.",
+  "author": {
+    "name": "GitHub"
+  }
+}

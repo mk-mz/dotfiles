@@ -1,0 +1,7 @@
+{
+  "name": "kusto-queries",
+  "description": "Write, optimize, and debug Kusto Query Language (KQL) queries for Azure Data Explorer and GitHub product metrics.",
+  "author": {
+    "name": "GitHub"
+  }
+}

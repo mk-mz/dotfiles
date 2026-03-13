@@ -1,0 +1,7 @@
+{
+  "name": "assign-issue-to-copilot",
+  "description": "Delegate GitHub issues to the Copilot coding agent. Assign Copilot to work on issues, or write well-structured issues for Copilot to handle.",
+  "author": {
+    "name": "GitHub"
+  }
+}

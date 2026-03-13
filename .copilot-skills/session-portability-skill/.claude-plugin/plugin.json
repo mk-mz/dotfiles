@@ -1,0 +1,7 @@
+{
+  "name": "session-portability",
+  "description": "Continue Copilot CLI work across environments by generating a handoff prompt that carries context into a new session.",
+  "author": {
+    "name": "GitHub"
+  }
+}

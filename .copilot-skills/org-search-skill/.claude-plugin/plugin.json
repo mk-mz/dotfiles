@@ -1,0 +1,7 @@
+{
+  "name": "org-search",
+  "description": "Find answers about decisions, ownership, architecture, and history by searching across an organization's GitHub issues, PRs, discussions, code, and documentation.",
+  "author": {
+    "name": "GitHub"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "initiative-weekly-status",
+  "description": "Generate structured weekly status reports for GitHub initiatives by aggregating sub-issue activity, PR progress, and live Kusto metrics.",
+  "author": {
+    "name": "GitHub"
+  }
+}

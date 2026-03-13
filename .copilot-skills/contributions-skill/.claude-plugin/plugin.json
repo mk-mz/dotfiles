@@ -1,0 +1,7 @@
+{
+  "name": "contributions",
+  "description": "Generate narrative contributions summaries from GitHub work, recognition, and optional Slack activity for a specific time period.",
+  "author": {
+    "name": "GitHub"
+  }
+}

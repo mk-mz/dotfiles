@@ -1,0 +1,7 @@
+{
+  "name": "update-status",
+  "description": "Write concise weekly updates for GitHub tracking issues with ship-point framing and risk/trend communication.",
+  "author": {
+    "name": "GitHub"
+  }
+}

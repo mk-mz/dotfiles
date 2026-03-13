@@ -1,0 +1,7 @@
+{
+  "name": "issue-breakdown",
+  "description": "Decompose large GitHub issues into actionable, limit-safe sub-issues with issue types, hierarchy, and acceptance criteria.",
+  "author": {
+    "name": "GitHub"
+  }
+}
