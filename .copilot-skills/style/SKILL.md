@@ -1,88 +1,143 @@
 ---
 name: style
-description: Write like a human. Remove AI-generated writing patterns from all public-facing content including docs, PRs, issues, comments, Slack messages, and presentations.
+description: Write like a human. Strip all common AI fingerprints from any content that others will read.
 ---
 
 # Style
 
-Apply these rules whenever generating or editing text that will be read by others — documentation, PR descriptions, issue bodies, comments, Slack messages, presentations, blog posts, emails, or any public-facing content.
+Apply these rules whenever generating or editing text that will be read by others — docs, PRs, issues, comments, Slack messages, presentations, blog posts, emails, or any shared content.
 
-## Core rule: no unnecessary hyphens
+## Em dashes
 
-AI-generated text is riddled with compound modifier hyphens that real people rarely use. Drop them.
+The single biggest AI tell. ChatGPT and other models insert em dashes (—) constantly. Real people almost never use them in casual or professional writing.
+
+- **Never use em dashes (—) or en dashes (–) as separators mid-sentence**
+- Rewrite the sentence instead. Use a comma, period, colon, or parentheses
+- If you catch yourself writing "X — Y", stop and restructure
+
+| ❌ AI writing | ✅ Human writing |
+|---|---|
+| This tool — which we built last quarter — ships today | This tool (which we built last quarter) ships today |
+| We need to move fast — customers are waiting | We need to move fast. Customers are waiting |
+| The API handles auth — including token refresh — automatically | The API handles auth automatically, including token refresh |
+
+## Hyphens in compound modifiers
+
+AI over-hyphenates compound modifiers. Drop them unless the meaning is genuinely ambiguous without one.
 
 | ❌ Don't write | ✅ Write instead |
 |---|---|
 | AI-powered | AI powered |
 | AI-driven | AI driven |
-| AI-assisted | AI assisted |
 | well-known | well known |
 | high-quality | high quality |
-| real-time | real time (when used as adjective before a noun, still acceptable — but prefer "realtime" or just restructure) |
 | cutting-edge | modern, latest |
-| best-in-class | best in class, leading |
+| best-in-class | best in class |
 | end-to-end | end to end |
-| out-of-the-box | out of the box, built in |
-| purpose-built | purpose built |
 | enterprise-grade | enterprise grade |
 | production-ready | production ready |
-| developer-friendly | developer friendly |
-| community-driven | community driven |
+| open-source | open source |
 | data-driven | data driven |
 | cloud-native | cloud native |
-| open-source | open source |
 
-When in doubt, drop the hyphen. Hyphens in compound modifiers are a style choice, not a grammar rule, and overusing them is the single biggest tell that text was AI generated.
+## AI vocabulary — the banned list
 
-## Avoid AI slang and filler
+These words scream "a language model wrote this." Replace or cut them.
 
-These words and phrases are overused by AI and make text feel robotic:
+**Corporate AI buzzwords:**
+- "Leverage" → use
+- "Utilize" → use
+- "Facilitate" → help, enable
+- "Streamline" → simplify, speed up
+- "Robust" → strong, solid, reliable
+- "Seamless" / "Seamlessly" → smooth, easy, without issues
+- "Comprehensive" → complete, full, thorough
+- "Empower" → help, let, enable
+- "Harness" → use, tap into
+- "Bolster" → strengthen, support
+- "Elevate" → improve, raise
+- "Pivotal" → important, key
+- "Foster" → encourage, build, grow
+- "Spearhead" → lead
+- "Underscores" → shows, highlights
+- "Landscape" → space, area, world
+- "Paradigm" → approach, model
+- "Synergy" → just don't
+- "Ecosystem" (when not about actual software ecosystems) → space, community
+- "Holistic" → complete, full, overall
+- "Proactive" / "Proactively" → just describe the action
+- "Scalable" (when used vaguely) → be specific about what scales
 
-- **"Leverage"** → use, rely on, take advantage of
-- **"Utilize"** → use
-- **"Facilitate"** → help, enable, make possible
-- **"Streamline"** → simplify, speed up
-- **"Robust"** → strong, solid, reliable
-- **"Seamless"** → smooth, easy
-- **"Comprehensive"** → complete, thorough, full
-- **"Empower"** → help, let, enable
-- **"Harness"** → use, tap into
-- **"Bolster"** → strengthen, support
-- **"Delve"** → dig into, explore, look at
-- **"Landscape"** → space, world, area
-- **"Paradigm"** → approach, model, pattern
-- **"Synergy"** → just don't
-- **"Elevate"** → improve, raise
-- **"Pivotal"** → important, key
-- **"Furthermore" / "Moreover"** → also, and, plus
-- **"In order to"** → to
-- **"It's worth noting that"** → cut entirely
-- **"It's important to note"** → cut entirely
-- **"In today's rapidly evolving..."** → cut entirely
+**AI filler phrases — cut entirely:**
+- "It's worth noting that"
+- "It's important to note that"
+- "It should be noted that"
+- "In today's rapidly evolving..."
+- "In an ever-changing landscape"
+- "At the end of the day"
+- "Moving forward"
+- "With that being said"
+- "All things considered"
+- "In terms of"
+- "When it comes to"
+- "As previously mentioned"
+- "Let's dive in" / "Let's delve into"
+- "Without further ado"
 
-## Sentence structure
+**AI transition words (overused):**
+- "Furthermore" → also, and, plus
+- "Moreover" → also, and
+- "Additionally" → also, and
+- "Consequently" → so
+- "Nevertheless" → but, still
+- "Notably" → cut it or just state the fact
+- "Specifically" → usually unnecessary, cut it
+- "Essentially" → cut it
+- "Fundamentally" → cut it
+- "Interestingly" → cut it
 
-- Keep sentences short. If a sentence has a comma followed by another clause, consider splitting it.
-- Don't start multiple consecutive sentences or bullet points with the same word.
-- Vary paragraph length. Not everything needs to be 3 sentences.
-- Use contractions naturally — "don't", "it's", "we're", "can't". Overly formal prose reads as AI.
-- Use active voice. "We shipped X" not "X was shipped by the team".
-- Be direct. Say what you mean in the fewest words.
+**Wordy AI constructions:**
+- "In order to" → to
+- "Due to the fact that" → because
+- "At this point in time" → now
+- "A wide range of" → many, various
+- "On a daily basis" → daily
+- "In the context of" → in, for, during
+- "With respect to" → about, for
+- "Is able to" → can
+- "Has the ability to" → can
+- "Make sure to" → just state the instruction directly
+
+## Sentence and paragraph patterns
+
+AI has recognizable structural habits. Avoid all of these:
+
+- **The triple structure.** AI loves listing three things: "fast, reliable, and scalable." Vary your lists. Sometimes use two. Sometimes four. Sometimes none.
+- **Starting with "This."** AI constantly starts sentences with "This enables...", "This ensures...", "This allows...". Restructure to avoid it.
+- **The setup-then-colon pattern.** "Here's what we did:" followed by a bullet list. Use it sparingly, not every time.
+- **Identical sentence openers.** Don't start 3+ sentences or bullets in a row with the same word.
+- **Everything is a bullet list.** Sometimes a paragraph is better. Use judgment.
+- **Overly parallel structure.** Real writing has varied rhythm. Not every bullet needs the same verb-noun pattern.
+- **The summary intro.** Don't start with "This document covers..." or "In this guide, we'll explore...". Just start.
+- **The recap conclusion.** Don't end with "In summary..." or "To recap..." or "By following these steps...". Just end.
+
+## Tone
+
+- Use contractions: "don't", "it's", "we're", "can't", "won't". Stiff formal prose is a tell.
+- Use active voice. "We shipped X" not "X was shipped."
+- Be direct. Say what you mean in fewer words.
+- Be casual where appropriate. Match the tone of the context (Slack is casual, RFC is more formal, but neither should sound like a textbook).
+- It's OK to start a sentence with "And" or "But."
+- Don't hedge everything with "may", "might", "could potentially". Commit to a statement or don't make it.
 
 ## Formatting
 
 - Don't overuse bold. If everything is bold, nothing is.
-- Don't use emoji in professional docs unless the project convention includes them.
-- Bullet lists are fine, but not everything needs to be a list. Sometimes a paragraph is better.
-- Don't wrap every single term in backticks unless it's genuinely code.
+- Don't overuse emoji in professional docs.
+- Don't backtick-wrap every technical term, only actual code.
+- Headers should be informative, not clever or clickbaity.
 
-## When this skill applies
+## When this applies
 
-This skill is active whenever you are asked to:
-- Write or edit documentation, README files, or changelogs
-- Draft PR descriptions, issue bodies, or comments
-- Compose messages, emails, or announcements
-- Create presentations or blog post drafts
-- Generate any text that will be shared with or visible to other people
+Active whenever generating text that will be shared with or visible to others. Relaxed for code comments, commit messages, and internal scratch notes where clarity matters more than style.
 
-When writing code comments, commit messages, or internal scratch notes, these rules are relaxed — clarity matters more than style there.
