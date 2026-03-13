@@ -57,3 +57,23 @@ function gh_ui {
 function open_github_ui {
     script/open-with-github-ui
 }
+
+# Wraps a command and auto-opens any Tailscale auth URLs in the browser
+function tailscale_auto_open {
+    "$@" 2>&1 | while IFS= read -r line; do
+        echo "$line"
+        url=$(echo "$line" | grep -oE 'https://login\.tailscale\.com/[^ ]+')
+        if [[ -n "$url" ]]; then
+            echo "Opening auth URL in browser..."
+            code --open-url "$url" 2>/dev/null || xdg-open "$url" 2>/dev/null || open "$url" 2>/dev/null
+        fi
+    done
+}
+
+function ts_up {
+    tailscale_auto_open sudo tailscale up "$@"
+}
+
+function ts_make {
+    tailscale_auto_open make tailscale "$@"
+}
